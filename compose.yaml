@@ -1,7 +1,6 @@
 services:
   api:
-    build:
-      dockerfile: Dockerfile
+    image: ploughgaard/aarhus-space-program-api:latest
     ports:
       - "5000:8080"
     depends_on:
