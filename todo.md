@@ -4,17 +4,17 @@ ASSIGNMENT 1
 
 1. A minimal web API
 
-   [] Open a terminal and in your projects folder run the following commands
+   [x] Open a terminal and in your projects folder run the following commands
    dotnet new webapi -n AarhusSpaceProgram.Api
    cd AarhusSpaceProgram.Api
 
-   [] Add these two packages
+   [x] Add these two packages
    dotnet add package Microsoft.AspNetCore.OpenApi
    dotnet add package Scalar.AspNetCore
 
-   [] Open the project in your IDE of choice, locate the program.cs file and replace it’s content with some code
+   [x] Open the project in your IDE of choice, locate the program.cs file and replace it’s content with code from PDF
 
-   [] Run and verify your project (<port> must be replaced with the specific port your project uses)
+   [x] Run and verify your project (<port> must be replaced with the specific port your project uses)
    In your project folder in a terminal run dotnet run
    Open a browser and verify
 
