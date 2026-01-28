@@ -32,12 +32,12 @@ ASSIGNMENT 1
 
 4. Deliverables
 
-   [] A compose.yml
+   [x] A compose.yml
 
    A readme.md containing:
-   [] the Docker Hub image name
-   [] how to run the system
-   [] which URL to open for Scalar
+   [x] the Docker Hub image name
+   [x] how to run the system
+   [x] which URL to open for Scalar
 
    Hand-in file name:
    BAD*MA1C_Docker*<auid>.zip uploaded to Brightspace
