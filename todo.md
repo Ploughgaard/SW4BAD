@@ -20,9 +20,9 @@ ASSIGNMENT 1
 
 2. Containerize your Web API
 
-   [] Containerize your solution and create a Dockerfile to build a docker image.
+   [x] Containerize your solution and create a Dockerfile to build a docker image.
 
-   [] The image creation must be multi-staged.
+   [x] The image creation must be multi-staged.
 
 3. Publish to Docker Hub + Docker Compose
 

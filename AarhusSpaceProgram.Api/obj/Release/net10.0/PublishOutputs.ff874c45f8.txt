@@ -1,0 +1,10 @@
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\AarhusSpaceProgram.Api.exe
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\appsettings.Development.json
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\appsettings.json
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\AarhusSpaceProgram.Api.dll
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\AarhusSpaceProgram.Api.deps.json
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\AarhusSpaceProgram.Api.runtimeconfig.json
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\AarhusSpaceProgram.Api.pdb
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\Microsoft.OpenApi.dll
+C:\Git\Hub\SW4BAD\AarhusSpaceProgram.Api\bin\Release\net10.0\publish\Scalar.AspNetCore.dll

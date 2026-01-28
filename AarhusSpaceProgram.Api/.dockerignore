@@ -1,0 +1,11 @@
+.git
+.gitignore
+.github
+bin
+obj
+.vs
+.vscode
+node_modules
+**/.DS_Store
+*.user
+*.md
