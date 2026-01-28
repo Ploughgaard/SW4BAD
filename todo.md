@@ -28,7 +28,7 @@ ASSIGNMENT 1
 
    [x] Publish your docker image to Docker Hub and create a compose.yml that runs your image from Docker Hub.
 
-   [] The docker compose file should work on any computer with Docker installed.
+   [x] The docker compose file should work on any computer with Docker installed.
 
 4. Deliverables
 
