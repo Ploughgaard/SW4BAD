@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\Hub\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj": {}
+    "C:\\Github\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj": {}
   },
   "projects": {
-    "C:\\Git\\Hub\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj": {
+    "C:\\Github\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\Hub\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj",
+        "projectUniqueName": "C:\\Github\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj",
         "projectName": "AarhusSpaceProgram.Api",
-        "projectPath": "C:\\Git\\Hub\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj",
+        "projectPath": "C:\\Github\\SW4BAD\\AarhusSpaceProgram.Api\\AarhusSpaceProgram.Api.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\Hub\\SW4BAD\\AarhusSpaceProgram.Api\\obj\\",
+        "outputPath": "C:\\Github\\SW4BAD\\AarhusSpaceProgram.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
