@@ -3,18 +3,4 @@ services:
     image: ploughgaard/aarhus-space-program-api:latest
     ports:
       - "5000:8080"
-    depends_on:
-      - db
-  db:
-    image: mcr.microsoft.com/mssql/server
-    user: root
-    volumes:
-      - hello-compose:/var/opt/mssql/data
-    environment:
-      MSSQL_SA_PASSWORD: "suchSecureVeryWordSoPassWow!"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
-volumes:
-  hello-compose:
-    name: hello-compose-db
+    

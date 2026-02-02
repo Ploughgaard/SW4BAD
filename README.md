@@ -8,7 +8,7 @@ A readme.md containing:
 [x] which URL to open for Scalar
 
 1. The Docker hub image name
-   profile: ploughgaard
+   profile: ploughgaard (more unique to search for)
    image name: aarhus-space-program-api
 
 2. How to run the system

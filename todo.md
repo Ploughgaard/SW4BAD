@@ -5,18 +5,18 @@ ASSIGNMENT 1
 1. A minimal web API
 
    [x] Open a terminal and in your projects folder run the following commands
-   dotnet new webapi -n AarhusSpaceProgram.Api
-   cd AarhusSpaceProgram.Api
+   - dotnet new webapi -n AarhusSpaceProgram.Api
+   - cd AarhusSpaceProgram.Api
 
    [x] Add these two packages
-   dotnet add package Microsoft.AspNetCore.OpenApi
-   dotnet add package Scalar.AspNetCore
+   - dotnet add package Microsoft.AspNetCore.OpenApi
+   - dotnet add package Scalar.AspNetCore
 
    [x] Open the project in your IDE of choice, locate the program.cs file and replace it’s content with code from PDF
 
    [x] Run and verify your project (<port> must be replaced with the specific port your project uses)
-   In your project folder in a terminal run dotnet run
-   Open a browser and verify
+   - In your project folder in a terminal run dotnet run
+   - Open a browser and verify
 
 2. Containerize your Web API
 
@@ -26,9 +26,9 @@ ASSIGNMENT 1
 
 3. Publish to Docker Hub + Docker Compose
 
-   [x] Publish your docker image to Docker Hub and create a compose.yml that runs your image from Docker Hub.
+   [x] Publish your docker image to Docker Hub and create a compose.yml that runs your image Docker Hub.
 
-   [] The docker compose file should work on any computer with Docker installed.
+   [x] The docker compose file should work on any computer with Docker installed.
 
 4. Deliverables
 
