@@ -22,15 +22,15 @@ TODO made from the assignment description
 
 4. Query data
    Mission overview including:
-   [] mission name
-   [] launch date
-   [] manager name
-   [] rocket model
-   [] launchpad location
-   [] target celestial body name
+   [x] mission name
+   [x] launch date
+   [x] manager name
+   [x] rocket model
+   [x] launchpad location
+   [x] target celestial body name
 
-   [] Mission crew list: astronauts, scientists, manager attached to a mission
-   [] Active or upcoming missions
-   [] Astronauts per mission
-   [] A list of all missions and the number of astronauts assigned to each mission
-   [] Total amount of weight launched from a specific launchpad
+   [x] Mission crew list: astronauts, scientists, manager attached to a mission
+   [x] Active or upcoming missions
+   [x] Astronauts per mission
+   [x] A list of all missions and the number of astronauts assigned to each mission
+   [x] Total amount of weight launched from a specific launchpad

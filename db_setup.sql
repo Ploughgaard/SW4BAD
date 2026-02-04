@@ -56,6 +56,7 @@ CREATE TABLE Astronaut (
     Paygrade VARCHAR(2) NOT NULL,
     ExpSimHours INT DEFAULT 0,
     ExpSpaceHours INT DEFAULT 0,
+    AstronautRoleDescription VARCHAR(500), -- Added for practicality
     CONSTRAINT FK_Astronaut_Staff FOREIGN KEY (AstronautID) REFERENCES Staff(StaffID) ON UPDATE CASCADE ON DELETE CASCADE
 )
 GO
@@ -65,6 +66,7 @@ CREATE TABLE Scientist (
     ScientistID INT PRIMARY KEY,
     Title VARCHAR(255) NOT NULL,
     Specialty VARCHAR(255) NOT NULL,
+    ScientistRoleDescription VARCHAR(500), -- Added for practicality
     CONSTRAINT FK_Scientist_Staff FOREIGN KEY (ScientistID) REFERENCES Staff(StaffID) ON UPDATE CASCADE ON DELETE CASCADE
 )
 GO
@@ -133,9 +135,11 @@ CREATE TABLE Mission (
     LaunchpadID INT NOT NULL,
     RocketID INT NOT NULL,
     ManagerID INT NOT NULL,
+    TargetAstroObjectID INT NOT NULL, -- Added for practicality in task D
     CONSTRAINT FK_Mission_Launchpad FOREIGN KEY (LaunchpadID) REFERENCES Launchpad(LaunchpadID) ON UPDATE CASCADE ON DELETE NO ACTION,
     CONSTRAINT FK_Mission_Rocket FOREIGN KEY (RocketID) REFERENCES Rocket(RocketID) ON UPDATE CASCADE ON DELETE NO ACTION,
-    CONSTRAINT FK_Mission_Manager FOREIGN KEY (ManagerID) REFERENCES Manager(ManagerID) ON UPDATE CASCADE ON DELETE NO ACTION
+    CONSTRAINT FK_Mission_Manager FOREIGN KEY (ManagerID) REFERENCES Manager(ManagerID) ON UPDATE CASCADE ON DELETE NO ACTION,
+    CONSTRAINT FK_Mission_TargetAstroObject FOREIGN KEY (TargetAstroObjectID) REFERENCES AstroObject(AstroObjectID) ON UPDATE CASCADE ON DELETE NO ACTION -- New FK
 )
 GO
 

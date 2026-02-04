@@ -30,26 +30,26 @@ GO
 
 
 -- Define Astronauts (5)
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
-VALUES (3, 'Commander', 'O5', 2500, 1200); 
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
-VALUES (4, 'Pilot', 'O4', 1800, 800);     
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
-VALUES (5, 'Flight Engineer', 'O3', 1500, 500);  
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
-VALUES (8, 'Mission Specialist', 'O3', 1000, 300); 
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
-VALUES (10, 'Pilot', 'O4', 1900, 750);    
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
+VALUES (3, 'Commander', 'O5', 2500, 1200, 'Experienced mission commander and space shuttle veteran.'); 
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
+VALUES (4, 'Pilot', 'O4', 1800, 800, 'Primary pilot for long-duration deep-space missions.');     
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
+VALUES (5, 'Flight Engineer', 'O3', 1500, 500, 'Specialist in spacecraft systems and in-flight repairs.');  
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
+VALUES (8, 'Mission Specialist', 'O3', 1000, 300, 'Expert in scientific payloads and extravehicular activities.'); 
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
+VALUES (10, 'Pilot', 'O4', 1900, 750, 'Co-pilot and navigation expert for planetary landings.');    
 GO
 
 
 -- Define Scientists (3)
-INSERT INTO Scientist (ScientistID, Title, Specialty)
-VALUES (6, 'Astrophysicist', 'Exoplanets');
-INSERT INTO Scientist (ScientistID, Title, Specialty)
-VALUES (7, 'Planetary Geologist', 'Martian Geology'); 
-INSERT INTO Scientist (ScientistID, Title, Specialty)
-VALUES (9, 'Exobiologist', 'Astrochemistry');
+INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
+VALUES (6, 'Astrophysicist', 'Exoplanets', 'Leading researcher in exoplanet habitability and atmospheric analysis.');      
+INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
+VALUES (7, 'Planetary Geologist', 'Martian Geology', 'Primary investigator for surface composition and geological history of Mars.'); 
+INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
+VALUES (9, 'Exobiologist', 'Astrochemistry', 'Specializes in the search for extraterrestrial life and chemical biosignatures.');    
 GO
 
 
@@ -90,14 +90,14 @@ GO
 
 
 -- Insert Missions (3)
-INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID)
-VALUES (401, 'Mars Reconnaissance Orbiter 2', 'Orbit', 'Planned', 730, '2026-07-20', 301, 201, 1); 
+INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID, TargetAstroObjectID)
+VALUES (401, 'Mars Reconnaissance Orbiter 2', 'Orbit', 'Planned', 730, '2026-07-20', 301, 201, 1, 101); 
 
-INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID)
-VALUES (402, 'Jupiter Moon Lander', 'Landing', 'Active', 1095, '2025-03-10', 301, 202, 2);
+INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID, TargetAstroObjectID)
+VALUES (402, 'Jupiter Moon Lander', 'Landing', 'Active', 1095, '2025-03-10', 301, 202, 2, 104); 
 
-INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID)
-VALUES (403, 'Phobos Sample Return', 'Landing', 'Planned', 500, '2027-01-05', 302, 201, 1);
+INSERT INTO Mission (MissionID, MissionName, MissionType, MissionStatus, PlannedDuration, PlannedLaunchDate, LaunchpadID, RocketID, ManagerID, TargetAstroObjectID)
+VALUES (403, 'Phobos Sample Return', 'Landing', 'Planned', 500, '2027-01-05', 302, 201, 1, 103);
 GO
 
 
@@ -107,12 +107,12 @@ INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (401, 4);
 INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (401, 5);
 GO 
 -- Other missions needs atronauts too 
-INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (402, 8); -- David Wilson on Mission 402
-INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (403, 10); -- Michael Brown on Mission 403
+INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (402, 8);
+INSERT INTO MissionAstronaut (MissionID, AstronautID) VALUES (403, 10); 
 GO
 
 
--- Requirement: 1 scientists works at at least 2 missions + all missions need a scientist (my own assumption)
+-- Requirement: 1 scientists works at at least 2 missions + all missions need a scientist (assumption)
 INSERT INTO MissionScientist (MissionID, ScientistID) VALUES (401, 6);
 INSERT INTO MissionScientist (MissionID, ScientistID) VALUES (402, 7); 
 INSERT INTO MissionScientist (MissionID, ScientistID) VALUES (403, 6); 
