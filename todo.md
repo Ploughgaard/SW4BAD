@@ -1,4 +1,4 @@
-TODO made from the assignment description
+TODO from the assignment description
 
 1. [x] Create an E/R diagram
 
