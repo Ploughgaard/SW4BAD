@@ -1,10 +1,10 @@
---- For testing purposes start
+---  testing start
 ALTER DATABASE AarhusSpaceProgram
-SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 GO
 
 -- Step 2: Switch context to master database (where your database isn't in use)
-USE master;
+USE master
 GO
 
 
