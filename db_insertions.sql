@@ -30,26 +30,26 @@ GO
 
 
 -- Astronauts (5)
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
-VALUES (3, 'Commander', 'O5', 2500, 1200, 'Experienced mission commander and space shuttle veteran.'); 
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
-VALUES (4, 'Pilot', 'O4', 1800, 800, 'Primary pilot for long-duration deep-space missions.');     
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
-VALUES (5, 'Flight Engineer', 'O3', 1500, 500, 'Specialist in spacecraft systems and in-flight repairs.');  
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
-VALUES (8, 'Mission Specialist', 'O3', 1000, 300, 'Expert in scientific payloads and extravehicular activities.'); 
-INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours, AstronautRoleDescription)
-VALUES (10, 'Pilot', 'O4', 1900, 750, 'Co-pilot and navigation expert for planetary landings.');    
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
+VALUES (3, 'Commander', 'O5', 2500, 1200); 
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
+VALUES (4, 'Pilot', 'O4', 1800, 800);     
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
+VALUES (5, 'Flight Engineer', 'O3', 1500, 500);  
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
+VALUES (8, 'Mission Specialist', 'O3', 1000, 300); 
+INSERT INTO Astronaut (AstronautID, Rank, Paygrade, ExpSimHours, ExpSpaceHours)
+VALUES (10, 'Pilot', 'O4', 1900, 750);    
 GO
 
 
 -- Scientists (3)
-INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
-VALUES (6, 'Astrophysicist', 'Exoplanets', 'Leading researcher in exoplanet habitability and atmospheric analysis.');      
-INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
-VALUES (7, 'Planetary Geologist', 'Martian Geology', 'Primary investigator for surface composition and geological history of Mars.'); 
-INSERT INTO Scientist (ScientistID, Title, Specialty, ScientistRoleDescription)
-VALUES (9, 'Exobiologist', 'Astrochemistry', 'Specializes in the search for extraterrestrial life and chemical biosignatures.');    
+INSERT INTO Scientist (ScientistID, Title, Specialty)
+VALUES (6, 'Astrophysicist', 'Exoplanets');      
+INSERT INTO Scientist (ScientistID, Title, Specialty)
+VALUES (7, 'Planetary Geologist', 'Martian Geology'); 
+INSERT INTO Scientist (ScientistID, Title, Specialty)
+VALUES (9, 'Exobiologist', 'Astrochemistry');    
 GO
 
 

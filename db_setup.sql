@@ -3,7 +3,7 @@ ALTER DATABASE AarhusSpaceProgram
 SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 GO
 
--- Step 2: Switch context to master database (where your database isn't in use)
+-- Switch context to master database
 USE master
 GO
 
@@ -56,7 +56,6 @@ CREATE TABLE Astronaut (
     Paygrade VARCHAR(2) NOT NULL,
     ExpSimHours INT DEFAULT 0,
     ExpSpaceHours INT DEFAULT 0,
-    AstronautRoleDescription VARCHAR(500), -- Added for practicality
     CONSTRAINT FK_Astronaut_Staff FOREIGN KEY (AstronautID) REFERENCES Staff(StaffID) ON UPDATE CASCADE ON DELETE CASCADE
 )
 GO
@@ -66,7 +65,6 @@ CREATE TABLE Scientist (
     ScientistID INT PRIMARY KEY,
     Title VARCHAR(255) NOT NULL,
     Specialty VARCHAR(255) NOT NULL,
-    ScientistRoleDescription VARCHAR(500), -- Added for practicality
     CONSTRAINT FK_Scientist_Staff FOREIGN KEY (ScientistID) REFERENCES Staff(StaffID) ON UPDATE CASCADE ON DELETE CASCADE
 )
 GO
